@@ -57,7 +57,7 @@ void MainWindow::on_randomGenerate_action_triggered()
     //显示单元块button
     showUnitsButtons();
     
-    //显示mianFrame
+    //显示mainFrame
     showMainFrame();
 }
 
@@ -105,7 +105,7 @@ void MainWindow::rotateUnits()
         
         std::vector<std::vector<cv::Point>> tmpContours;
         cv::findContours(tmpImg,tmpContours,cv::RETR_EXTERNAL,CV_CHAIN_APPROX_SIMPLE);
-        unitPatterns[i].assign(tmpContours[0].begin(),tmpContours[0].end());
+        unitPatterns[i].assign(tmpContours[0].begin(),tmpContours[0].end()) ;
     }
 }
 
